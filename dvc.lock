@@ -1,8 +1,8 @@
 schema: '2.0'
 stages:
   ingest:
-    cmd: python -m src.data.ingest --input data/raw/water_potability.csv 
-      --output data/processed/water_potability.csv
+    cmd: python -m src.data.ingest --input data/raw/water_potability.csv --output
+      data/processed/water_potability.csv
     deps:
     - path: data/raw/water_potability.csv
       hash: md5
@@ -43,8 +43,8 @@ stages:
       size: 414033
     - path: data/processed/transformer.joblib
       hash: md5
-      md5: c354d36c7f1b63506e1bdee047eb01ff
-      size: 2616
+      md5: aabc179a1a126eb631b32391a19c84f1
+      size: 2837
     - path: data/processed/val.csv
       hash: md5
       md5: e08563a562b21f6a4589eb9081a77977
